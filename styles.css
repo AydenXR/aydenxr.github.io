@@ -21,8 +21,26 @@
  position: absolute;
  font-size: 75px;
  margin: 0;
- left: 765px;
+ left: 755px;
  font-family: 'Coolvetica', sans-serif;
+ animation: fromtop 1s forwards;
+}
+
+@keyframes fromtop {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateY(-50px);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
 }
 
 /*////////////////////////////////////////////////////////////////////*/
@@ -79,59 +97,32 @@
  color: grey;
 }
 
-.profile__contacto {
- position: absolute;
- left: 920px;
- top: 335px;
- font-size: 18px;
-}
-
-.profile__input {
-  background-color: grey;
-  color: rgb(0, 0, 0);
-  border: none;
-  border-radius: 10px;
-  padding: 8px 15px;
-  font-family: 'Coolvetica', sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.profile__input:hover {
-  background-color: #bbbbbb;
-}
-
-.profile__inputbutton {
-  background-color: blue;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 8px 15px;
-  font-family: 'Coolvetica', sans-serif;
-  font-size: 14px;
-  cursor: pointer;
+.contacto__correo {
+  left: 410px;
+  top: 170px;
+  position: relative;
   text-align: center;
-  width: 80px;
-  height: 38px;
-  transition: background-color 0.3s ease;
 }
 
-.profile__inputbutton:hover {
-  background-color: #000000;
+.contacto__numero {
+  left: 410px;
+  top: 170px;
+  width: 120px;
+  position: relative;
+  text-align: center;
 }
 
 .button__github {
  position: absolute;
  left: 915px;
- top: 375px;
+ top: 370px;
  width: 55px;
 }
 
 .button__linkedin {
  position: absolute;
  left: 978px;
- top: 386px;
+ top: 381px;
  width: 42px;
 }
 
